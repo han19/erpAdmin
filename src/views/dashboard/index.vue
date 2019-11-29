@@ -1,6 +1,6 @@
 <template>
 	<div class="content">
-		首页
+		首页879897856456
 	</div>
 </template>
 
