@@ -27,27 +27,6 @@ export function intersection(arr1, arr2) {
 	return arr;
 }
 
-//对下拉数据处理，返回格式[{id:'',text:''}]
-export function handleData(data){
-	let dataArr = [];
-	data.map(item=>{
-		dataArr.push({
-			id: item.Value,
-			text: item.Text
-		})
-	});
-	return dataArr;
-}
-//输入框不能为空判断
-export function inputValidation(arr,obj){
-	for(let i in obj){
-		for(let j=0;j<arr.length;j++){
-			if(i === arr[j].fieldName && obj[i] === ''){
-				return arr[j].fieldText;
-			}
-		}
-	}
-}
 
 /**
  * [清除掉首尾空格]

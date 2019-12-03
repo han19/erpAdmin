@@ -43,22 +43,10 @@ export default {
 	methods: {
 		//登录
 		submitForm(formName) {
-			this.$refs[formName].validate(valid => {
-				if (valid) {
-					this.$postFn('login', {
-						userName: this.ruleForm.userName,
-						userPassword: this.ruleForm.userPassword
-					}).then(res => {
-						if(res.isSuccess){
-							setToken(res.resultObject.token);
-							this.$router.push({ path: '/' });
-							localStorage.setItem('auth',JSON.stringify(res.resultObject.auth))//保存用户权限
-						}
-					});
-				} else {
-					return false;
-				}
-			});
+			let auth = ['listManagement/list1','listManagement/list2','listManagement/list3','listManagement/list4'];//用户权限列表
+			setToken('4464aksjdudasdn878jhasj');//保存token
+			localStorage.setItem('auth',JSON.stringify(auth))//保存用户权限
+			this.$router.push({ path: '/' });
 		}
 	}
 };

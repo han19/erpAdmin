@@ -32,7 +32,7 @@ const permission = {
 		routerData: [], //存放权限路由列表
 	},
 	mutations: {
-		getMutationsRouter(state,authRouter) {
+		getMutationsRouter(state, authRouter) {
 			state.routerData = constantRoutes.concat(authRouter)
 		}
 	},

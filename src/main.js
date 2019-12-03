@@ -7,11 +7,8 @@ import './style/normalize.scss'
 import './style/element-variables.scss'
 import './style/index.scss'
 import './permission.js'
-import { postFn,getFn } from '@/api/api.js'
 Vue.use(Element)
 Vue.config.productionTip = false
-Vue.prototype.$postFn = postFn
-Vue.prototype.$getFn = getFn
 new Vue({
   router,
   store,
