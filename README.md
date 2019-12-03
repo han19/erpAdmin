@@ -29,8 +29,5 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### git使用
-git add .
-git commit -m '备注'
-git push origin master
+
 
